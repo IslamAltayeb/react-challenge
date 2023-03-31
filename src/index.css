@@ -1,0 +1,160 @@
+/* global prop */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --dark-color: #19283f;
+  --red-color:  #ff3150;
+  --yellow-color:#ffc400;
+  --section-color: #eff7fa;
+  --main-font: 'Roboto', sans-serif; 
+}
+
+/* start header */
+.header{
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: var(--dark-color);
+}
+
+.header h1{
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--section-color);
+  font-family: var(--main-font);
+}
+
+.header i{
+  color: var(--yellow-color);
+}
+/* end header */
+
+/* start search section */
+.search{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.search input{
+  width: 80%;
+  height: 30px;
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.search button{
+  width: 100px;
+  cursor: pointer;
+  background-color: var(--dark-color);
+  color: var(--section-color);
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.search button:hover{
+  background-color: transparent;
+  color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+}
+/* end search section */
+
+/* warning message */
+p.warning{
+  text-align: center;
+  color: #ff3150;
+
+}
+
+/* start user-info section */
+.user-info{
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 12%;
+  width: 60%;  
+  border-top: 1px solid var(--dark-color);
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.user-info img{
+  width: 175px;
+  margin-right: 15px;
+  margin: 2px;
+}
+
+.user-info .info h4,.user-info .info h3{
+  margin: 2px;
+  border: 1px solid var(--dark-color);
+  padding: 10px;
+  width: 400px;
+  color: var(--dark-color);
+}
+
+.user-info .info span{
+  color: #302f2f;
+}
+/* end user-info section */
+
+/* start repo-List section */
+.repo-List h2{
+  text-align: center;
+  padding: 10px;
+}
+
+.repo-List .repos a{
+  display: flex;
+  flex-flow: wrap column;
+}
+/* end repo-List section */
+
+/* start table section */
+table{
+  width: 60%;
+  margin: 0 auto;
+}
+
+table, th, td {
+  border:1px solid var(--dark-color);
+}
+
+th{
+  background-color: var(--dark-color);
+  color: var(--section-color);
+}
+
+td{
+  background-color: #777;  
+}
+
+table th.repo-name{
+  width: 50%;
+}
+
+table td a{
+  text-align: center;
+  padding: 10px;
+}
+table td p{
+  text-align: center;
+  padding: 5px;
+  font-size: 18px;
+}
+/* end table section */
+
+/* start footer */
+.footer{
+  text-align: center;
+  padding: 10px;
+  background-color: var(--dark-color);
+  color: var(--section-color);
+}
+/* end footer */
